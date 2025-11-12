@@ -1,11 +1,8 @@
-﻿import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'; // keep your plugin(s)
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/restaurent/',   // <--- add this line (your repo name)
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
 });
